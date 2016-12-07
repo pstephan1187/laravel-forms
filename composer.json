@@ -1,0 +1,18 @@
+{
+    "name": "pstephan1187/laravel-forms",
+    "description": "A package for programmatically creating and processing forms and fields.",
+    "keywords": ["laravel", "form"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Patrick Stephan",
+            "email": "pstephan1187@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Formery\\": "src/"
+        }
+    },
+}
