@@ -21,6 +21,13 @@ abstract class Field
 		}
 	}
 
+	public function setViewFile($view_file)
+	{
+		$this->view_file = $view_file;
+
+		return $this;
+	}
+
 	public function getAttributes()
 	{
 		return $this->attributes;
