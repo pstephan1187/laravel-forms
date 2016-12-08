@@ -68,7 +68,7 @@ The `validate` method utilizes the same functionality as the one included in Lar
 * `__construct($name, $label, $attributes = [])`
 * `addRules($rule)` Add one or more Laravel validation rules. You can add one, or an array of many.
 * `options(array $options)` For fields of types Select, Radio, and Checkbox, you will need to add available options. That can be done via this method. The array should be composed of options in this format: `[‘label’ => ‘The Option Label’, ‘value’ => ‘the_option_label’]`. For Select fields, you may also define optgroups by nesting options inside of a `options` key: [‘label’ => ‘My Option Group’, ‘options’ => [/*…*/]]
-* You can also programmatically set attributes to the input field like so: `$field->attribute(‘value’)`
+* You can also programmatically set attributes to the input field like so: `$field->attribute(‘value’)`. You may also set flag attributes by leaving the value blank: `$field->disabled()`
 
 ## Available Field Types
 

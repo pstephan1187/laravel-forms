@@ -1,7 +1,7 @@
 <div class="form-group {{ ($errors->has($field->name) ? 'has-error' : '') }}">
 	<label for="{{ $field->getAttributes()->get('id') }}" class="control-label">{{ $field->label }}</label>
 	<select
-		name="{{ $field->name }}"
+		name="{{ $field->name }}{{ $field->multiple ? '[]' : '' }}"
 		class="form-control {{ array_get($field->getAttributes(), 'class') }}"
 		@foreach(array_except($field->getAttributes()->all(), ['class', 'value']) as $key => $value)
 			@if($value === true)
