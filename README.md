@@ -272,6 +272,7 @@ The following field types are available with Formery. You can, of course, create
 
 * `Formery\FieldTypes\Checkbox`
 * `Formery\FieldTypes\Email`
+* `Formery\FieldTypes\File`
 * `Formery\FieldTypes\Number`
 * `Formery\FieldTypes\Password`
 * `Formery\FieldTypes\Radio`
