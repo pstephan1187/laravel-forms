@@ -26,7 +26,7 @@ class Select extends Field
 		return $this->options;
 	}
 
-	public function default($label, $value = '')
+	public function initial($label, $value = '')
 	{
 		$this->options->prepend(['label' => $label, 'value' => $value, 'disabled' => true]);
 

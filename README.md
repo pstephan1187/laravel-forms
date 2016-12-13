@@ -257,13 +257,13 @@ $field->value(['option_one', 'option_two']);
 For select boxes, you can also assign a default select option.
 
 ```
-$select_field->default('Selection an option');
+$select_field->initial('Selection an option');
 ```
 
 This will set a disabled option as the first and selected option (unless the select box has a value) with the given label. You can also pass it a value as the second parameter.
 
 ```
-$select_field->default('Selection an option', 'nothing');
+$select_field->initial('Selection an option', 'nothing');
 ```
 
 ### Available Field Types
