@@ -19,7 +19,7 @@ class ServiceProvider extends BaseProvider
 	    ]);
 
 		Blade::directive('form', function($expression){
-			return '<?php echo '.$expression.'->render(); ?>';
+			return "<?php echo with{$expression}->render(); ?>";
 		});
 	}
 }
