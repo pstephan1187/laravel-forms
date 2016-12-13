@@ -128,11 +128,23 @@ class FormBuilder
 
 	public function getValidationRules()
 	{
-		return $this->fields->reject(function($field){
+		$filtered_fields = $this->fields->reject(function($field){
 			return $field->getValidationRules() === null;
-		})->mapWithKeys(function($field){
-			return [$field->name => $field->getValidationRules()];
 		});
+
+		if(method_exists($filtered_fields, 'mapWithKeys')){
+			return $filtered_fields->mapWithKeys(function($field){
+				return [$field->name => $field->getValidationRules()];
+			});
+		}
+
+		$fields = [];
+
+		foreach($filtered_fields as $field){
+			$fields[$field->name] = $field->getValidationRules();
+		}
+
+		return collect($fields);
 	}
 
 
