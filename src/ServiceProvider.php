@@ -15,7 +15,7 @@ class ServiceProvider extends BaseProvider
 		$this->loadViewsFrom(__DIR__.'/views', 'form');
 
 	    $this->publishes([
-	        __DIR__.'/views' => resource_path('views/vendor/form'),
+	        __DIR__.'/views' => function_exists('resource_path') ? resource_path('views/vendor/form') : base_path('resources/views/vendor/form'),
 	    ]);
 
 		Blade::directive('form', function($expression){
