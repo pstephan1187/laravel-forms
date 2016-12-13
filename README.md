@@ -1,6 +1,6 @@
 Formery is a package for programmatically creating and validating forms in Laravel. It comes preconfigured to use Twitter Bootstrap, but can easily be customized to use whatever you want.
 
-Currently, Formery has only been tested in Laravel 5.3. There is no minimum requirement for Laravel set in the composer file yet because it may very well work in earlier versions. I just haven’t tested them yet. It, however, must be used in blade templates. It does not support plain PHP templates or Twig yet.
+Currently, Formery supports Laravel > 5.1 and it must be used in blade templates. It does not support plain PHP templates or Twig yet.
 
 ## Installation
 
