@@ -9,7 +9,9 @@
             "email": "pstephan1187@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "laravel/framework": ">=5.1.0"
+    },
     "autoload": {
         "psr-4": {
             "Formery\\": "src/"
